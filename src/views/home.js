@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
@@ -7,7 +8,7 @@ import FeatureCard from '../components/feature-card'
 import TestimonialsCard from '../components/testimonials-card'
 import StatsCard from '../components/stats-card'
 import LinkIconButton from '../components/link-icon-button'
-import StoreBanner from '../components/store-banner'
+import AppComponent from '../components/component'
 import './home.css'
 
 const Home = (props) => {
@@ -28,12 +29,14 @@ const Home = (props) => {
           </div>
           <h1 className="home-text">Mortuum In Tenebris</h1>
           <div className="home-menu">
-            <span className="home-text01">About</span>
-            <span className="home-text02">Services</span>
-            <span className="home-text03">Pricing</span>
-            <span className="home-text04">Blog</span>
-            <span className="home-text05">Testimonials</span>
-            <span className="home-text06">More</span>
+            <span className="home-text01">Home</span>
+            <Link to="/services" className="home-navlink">
+              Services
+            </Link>
+            <span className="home-text02">Pricing</span>
+            <span className="home-text03">Blog</span>
+            <span className="home-text04">Testimonials</span>
+            <span className="home-text05">More</span>
             <svg viewBox="0 0 1024 1024" className="home-icon">
               <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
             </svg>
@@ -63,12 +66,12 @@ const Home = (props) => {
             </div>
           </div>
           <div className="home-mid">
-            <span className="home-text07">About</span>
-            <span className="home-text08">Products</span>
-            <span className="home-text09">Pricing</span>
-            <span className="home-text10">Blog</span>
-            <span className="home-text11">Jobs</span>
-            <span className="home-text12">More</span>
+            <span className="home-text06">About</span>
+            <span className="home-text07">Products</span>
+            <span className="home-text08">Pricing</span>
+            <span className="home-text09">Blog</span>
+            <span className="home-text10">Jobs</span>
+            <span className="home-text11">More</span>
           </div>
           <div className="home-bot">
             <div className="home-container02">
@@ -136,7 +139,7 @@ const Home = (props) => {
       <div className="home-main">
         <div className="home-hero">
           <div className="home-container07">
-            <h1 className="home-text13 headline1">
+            <h1 className="home-text12 headline1">
               <span>Seguridad y</span>
               <br></br>
               <span>espionaje.</span>
@@ -145,7 +148,7 @@ const Home = (props) => {
           </div>
           <img
             alt="image"
-            src="/playground_assets/iphonex-1200w.png"
+            src="/playground_assets/iphonex-1500h.png"
             loading="eager"
             className="home-image02"
           />
@@ -201,9 +204,9 @@ const Home = (props) => {
         <div className="home-divider1"></div>
       </div>
       <div className="home-features">
-        <h2 className="home-text17 headline2">Tailor-made features</h2>
-        <span className="home-text18">
-          <span className="home-text19">
+        <h2 className="home-text16 headline2">Tailor-made features</h2>
+        <span className="home-text17">
+          <span className="home-text18">
             Lorem ipsum is common placeholder text used to demonstrate the
             graphic elements of a document or visual presentation.
           </span>
@@ -243,10 +246,10 @@ const Home = (props) => {
       <div className="home-testimonials">
         <div className="home-container08">
           <div className="home-container09">
-            <h1 className="home-text20 headline2">
+            <h1 className="home-text19 headline2">
               Real Stories from Real Customers
             </h1>
-            <span className="home-text21">Get inspired by these stories.</span>
+            <span className="home-text20">Get inspired by these stories.</span>
             <div className="home-container10">
               <TestimonialsCard image_src="/playground_assets/logo-4.svg"></TestimonialsCard>
             </div>
@@ -274,8 +277,8 @@ const Home = (props) => {
       </div>
       <div className="home-achievements">
         <div className="home-container14">
-          <h2 className="home-text22">
-            <span className="home-text23">
+          <h2 className="home-text21">
+            <span className="home-text22">
               Our 18 years of
               <span
                 dangerouslySetInnerHTML={{
@@ -286,8 +289,8 @@ const Home = (props) => {
             <br></br>
             <span>achievements</span>
           </h2>
-          <span className="home-text26">
-            <span className="home-text27">
+          <span className="home-text25">
+            <span className="home-text26">
               With our super powers we have reached this
             </span>
           </span>
@@ -319,15 +322,15 @@ const Home = (props) => {
         <div className="home-container18">
           <img
             alt="image"
-            src="/playground_assets/iphonex-1200w.png"
-            image_src="/playground_assets/iphonex-1200w.png"
+            src="/playground_assets/iphonex-1500h.png"
+            image_src="/playground_assets/iphonex-1500h.png"
             className="home-image08"
           />
         </div>
         <div className="home-container19">
           <h3 className="headline3">Headline</h3>
-          <span className="home-text29 lead1">
-            <span className="home-text30">
+          <span className="home-text28 lead1">
+            <span className="home-text29">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst
               risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
@@ -349,13 +352,13 @@ const Home = (props) => {
       </div>
       <div className="home-feature2">
         <div className="home-container20">
-          <h2 className="headline2 home-text31">
-            <span className="home-text32">
+          <h2 className="headline2 home-text30">
+            <span className="home-text31">
               Enter the world of all fashion trends
             </span>
           </h2>
-          <span className="home-text33 lead1">
-            <span className="home-text34">
+          <span className="home-text32 lead1">
+            <span className="home-text33">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst
               risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
@@ -366,41 +369,40 @@ const Home = (props) => {
         <img
           alt="image"
           src="https://images.unsplash.com/photo-1535157412991-2ef801c1748b?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;h=1000"
-          image_src="/playground_assets/iphonex-1200w.png"
+          image_src="/playground_assets/iphonex-1500h.png"
           className="home-image09"
         />
       </div>
       <div className="home-c-t-a">
         <div className="home-container21">
           <div className="home-container22">
-            <h2 className="headline2 home-text35">
-              <span className="home-text36">
+            <h2 className="headline2 home-text34">
+              <span className="home-text35">
                 Manage your projects from your mobile
               </span>
             </h2>
-            <span className="home-text37 lead1">
-              <span className="home-text38">
+            <span className="home-text36 lead1">
+              <span className="home-text37">
                 Download the app to manage your projects, keep track of the
                 progress and complete tasks without procastinating. Stay on
                 track and complete on time!
               </span>
             </span>
-            <span className="home-text39 subtitle2">
-              <span className="home-text40">Get the App</span>
+            <span className="home-text38 subtitle2">
+              <span className="home-text39">Get the App</span>
             </span>
-            <StoreBanner></StoreBanner>
           </div>
           <div className="home-container23">
             <img
               alt="image"
-              src="/playground_assets/iphonex-1200w.png"
-              image_src="/playground_assets/iphonex-1200w.png"
+              src="/playground_assets/iphonex-1500h.png"
+              image_src="/playground_assets/iphonex-1500h.png"
               className="home-image10"
             />
             <img
               alt="image"
-              src="/playground_assets/iphonex-1200w.png"
-              image_src="/playground_assets/iphonex-1200w.png"
+              src="/playground_assets/iphonex-1500h.png"
+              image_src="/playground_assets/iphonex-1500h.png"
               className="home-image11"
             />
           </div>
@@ -408,23 +410,19 @@ const Home = (props) => {
       </div>
       <div className="home-footer">
         <footer className="home-container24">
-          <img
-            alt="image"
-            src="/playground_assets/logotype-light.svg"
-            className="home-image12"
-          />
+          <AppComponent rootClassName="app-component-root-class-name"></AppComponent>
           <div className="home-container25">
-            <span className="home-text41">About</span>
-            <span className="home-text42">Features</span>
-            <span className="home-text43">Pricing</span>
-            <span className="home-text44">Careers</span>
-            <span className="home-text45">Help</span>
-            <span className="home-text46">Privacy Policy</span>
+            <span className="home-text40">About</span>
+            <span className="home-text41">Services</span>
+            <span className="home-text42">Pricing</span>
+            <span className="home-text43">Blog</span>
+            <span className="home-text44">Help</span>
+            <span className="home-text45">Privacy Policy</span>
           </div>
           <div className="home-divider2"></div>
           <div className="home-container26">
-            <span className="home-text47 body2">
-              © 2020 Landify UI Kit. All rights reserved
+            <span className="home-text46 body2">
+              © 2021 Max. All rights reserved
             </span>
             <div className="home-container27">
               <a

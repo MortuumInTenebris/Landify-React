@@ -20,7 +20,7 @@ const FeatureCard = (props) => {
 
 FeatureCard.defaultProps = {
   rootClassName: '',
-  title: 'Title',
+  title: 'Espionaje',
   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
   image_src: '/playground_assets/01.svg',
   image_alt: 'image',
